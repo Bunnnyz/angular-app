@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  a: number = 10;
+  b: number = 20;
+  total = this.a+this.b;
   title = 'app';
 }
