@@ -6,8 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  a: number = 10;
-  b: number = 20;
-  total = this.a+this.b;
   title = 'app';
+
+getvalue(val1: String){
+  if(val1==''){
+    alert("Please provide something")
+  }
+  else{
+    alert(val1);
+  }
+}
+
+username: string = 'Type something';
+  clickme() {
+    alert(this.username);
+  }
 }

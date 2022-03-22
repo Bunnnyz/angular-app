@@ -1,1 +1,23 @@
-<label>{{a}} + {{b}} = {{total}}</label>
+<div class="jumbotron text-center">
+  <h3>Angular Get Text Box value On Button Click:</h3>
+</div>
+<div class="container">
+ <div class="form-group col-2">
+  <label>Name</label>
+  <input type="text" class="form-control" #value><br>
+  <button class="btn btn-success" (click)="getvalue(value.value)">Send</button>
+</div>
+</div>
+<br>
+<div class="container">
+<div class="card col-8">
+<div class="card-head">
+  <h1> {{username}}</h1>
+</div>
+<div class="dec">
+  <p><input type="text" id="username" name="username" [(ngModel)]="username" class="form-control"></p>
+  <button type="button" (click)="clickme()">Clickme</button>
+  
+</div>
+</div>
+</div>
